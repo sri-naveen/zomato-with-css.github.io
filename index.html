@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato</title>
+
+    <!-- External style sheet link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    
+    
+</head>
+<body>
+    <!-- Header -->
+    <hr class="red-hr">
+    <hr class="black-hr">
+    <h1>zomato</h1>
+
+    <!-- Main Options -->
+    <div class="main-container">
+
+        <!-- Location -->
+        <div id="city">
+            <p style="display: inline;">Select your location 📍</p>
+            <select name="city" id="city">
+                <option value="bangalore">Bangalore</option>
+                <option value="hyderabad">Hyderabad</option>
+                <option value="delhi">Delhi</option>
+                <option value="vijayawada">Vijayawada</option>
+                <option value="kochi">Kochi</option>
+                <option value="visakhapatnam">Visakhapatnam</option>
+            </select>
+        </div>
+
+        <!-- Search Bar -->
+        <div id="search">
+            <input type="text" id="search-box" placeholder="🔍 Search for restaurant,cuisine or a dish">
+        </div>
+
+        <!-- Login and sign up -->
+        <div id="main_buttons">
+            <a href="#"><p class="mb">Log in</p></a>
+            <a href="#"><p class="mb">Sign in</p></a>
+            <a href="#contact"><p class="mb">Contact us</p></a>
+        </div>
+    </div>
+
+    <!-- Options -->
+    <div class="options-zomato">
+        <table class="service-options">
+            <tr>
+                <td><input type="radio" name="option"></td>
+                <td><label for="" class="service">Delivery </label></td>
+                <td> <img src="Images/Other/delivery.png" alt="delivery image" height="40"></td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><input type="radio" name="option"></td>
+                <td><label for="" class="service">Dining Out </label></td>
+                <td> <img src="Images/Other/dineout.png" alt="dine out image" height="50"></td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><input type="radio" name="option"></td>
+                <td><label for="" class="service">Nightlife </label></td>
+                <td> <img src="Images/Other/nightlife.png" alt="Night life image" height="50"></td>
+
+            </tr>
+        </table>
+    </div>
+
+    <hr class="grey-hr">
+
+    <div class="basic-options">
+        <table class="left-options">
+            <tr>
+                <!-- Veg or Non Veg -->
+                <td><input type="radio" name="option"></td>
+                <td><label class="basic-option">Pure Veg </label></td>
+                <td>&nbsp;&nbsp;&nbsp;</td>
+
+                <td><input type="radio" name="option"></td>
+                <td><label class="basic-option">Non Veg </label></td>
+            </tr>
+        </table>
+
+        <table class="right-options">
+            <tr>
+                <!-- Rating options -->
+                <td>
+                    <label for="rating" class="basic-option">Rating </label>
+                    <select name="rating" class="basic-size">
+                        <option value="any">Any</option>
+                        <option value="above 3.5">Above 3.5</option>
+                        <option value="above 4.0">Above 4.0</option>
+                        <option value="above 4.5">Above 4.5</option>
+                        <option value="5.0">5.0</option>
+                    </select>
+                </td>
+
+                <td>&nbsp;&nbsp;&nbsp;</td>
+
+                <!-- Sort by options -->
+                <td>
+                    <label for="filter" class="basic-option">Sort by </label>
+                    <select name="filter" class="basic-size">
+                        <option value="opularity">Popularity</option>
+                        <option value="rating">Rating: High to Low</option>
+                        <option value="delivery time">Delivery Time</option>
+                        <option value="cost-low to high">Cost: Low to High</option>
+                        <option value="cost-high to low">Cost: High to Low</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+
+
+    </div>
+
+    <hr class="grey-hr">
+    <h3 class="sub-heading">Inspiration for your <mark>first order</mark> </h3>
+
+    <!-- First Row Items -->
+    <div class="first-row-pics">
+        <div class="biriyani">
+            <a href="https://www.zomato.com/bangalore/restaurants?place_name=Bengaluru&dishv2_id=30308" target="_blank">
+                <img src="Images/Food items/biriyani.png" alt="biriyani image" height="190">
+            </a>
+            <a href="https://www.zomato.com/bangalore/restaurants?place_name=Bengaluru&dishv2_id=30308" target="_blank"><p class="item-name">Biriyani</p> </a>
+        </div>
+
+        <div class="pizza">
+            <a href="https://www.zomato.com/bangalore/restaurants?place_name=Bengaluru&dishv2_id=68987" target="_blank">
+                <img src="Images/Food items/pizza.png" alt="pizza image" height="150">
+            </a>
+            <a href="https://www.zomato.com/bangalore/restaurants?place_name=Bengaluru&dishv2_id=68987" target="_blank"><p class="item-name">Pizza</p></a>
+        </div>
+
+        <div class="burger">
+            <a href="https://www.zomato.com/bangalore/delivery?dishv2_id=9055" target="_blank">
+                <img src="Images/Food items/burgers.png" alt="burger image" height="160">
+            </a>
+            <a href="https://www.zomato.com/bangalore/delivery?dishv2_id=9055" target="_blank"><p class="item-name">Burger</p></a>
+        </div>
+
+        <div class="fried-rice">
+            <a href="https://www.zomato.com/bangalore/restaurants?place_name=Bengaluru&dishv2_id=35301" target="_blank">
+                <img src="Images/Food items/fried rice.png" alt="friedrice image" height="170">
+            </a>
+            <a href="https://www.zomato.com/bangalore/restaurants?place_name=Bengaluru&dishv2_id=35301" target="_blank"><p class="item-name">Fried Rice</p></a>
+        </div>
+
+        <div class="idli">
+            <a href="https://www.zomato.com/bangalore/delivery?dishv2_id=35114" target="_blank">
+                <img src="Images/Food items/idli.png" alt="idli image" height="140">
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.zomato.com/bangalore/delivery?dishv2_id=35114" target="_blank"><p class="item-name">Idli</p></a>
+        </div>
+    </div>
+
+    <!-- Second Row Items -->
+    <div class="second-row-pics">
+        <div class="cake">
+            <a href="https://www.zomato.com/bangalore/restaurants?place_name=Bengaluru&dishv2_id=39212" target="_blank">
+                <img src="Images/Food items/cake.png" alt="cake image" height="180">
+            </a>
+            <a href="https://www.zomato.com/bangalore/restaurants?place_name=Bengaluru&dishv2_id=39212" target="_blank"><p class="item-name">Cake</p></a>
+        </div>
+
+        <div class="thali">
+            <a href="https://www.zomato.com/bangalore/restaurants?place_name=Bengaluru&dishv2_id=35013" target="_blank">
+                <img src="Images/Food items/thali.png" alt="thali image" height="170">
+            </a>
+            <a href="https://www.zomato.com/bangalore/restaurants?place_name=Bengaluru&dishv2_id=35013" target="_blank"><p class="item-name">Thali</p></a>
+        </div>
+
+        <div class="rolls">
+            <a href="https://www.zomato.com/bangalore/delivery?dishv2_id=56691" target="_blank">
+                <img src="Images/Food items/rolls.png" alt="rolls image" height="160">
+            </a>
+            <a href="https://www.zomato.com/bangalore/delivery?dishv2_id=56691" target="_blank"><p class="item-name">Rolls</p></a>
+        </div>
+
+        <div class="ice-cream">
+            <a href="https://www.zomato.com/bangalore/delivery?dishv2_id=58693" target="_blank">
+                <img src="Images/Food items/ice cream.png" alt="icecream image" height="170">
+            </a>
+            <a href="https://www.zomato.com/bangalore/delivery?dishv2_id=58693" target="_blank"><p class="item-name">Ice Cream</p></a>
+        </div>
+
+    </div>
+
+    <hr class="grey-hr">
+    <h3 class="sub-heading" id="brands-head">Top <mark>brands</mark> for you</h3>
+
+    <!-- Brands -->
+    <div class="brands">
+        <div class="burger-king">
+            <a href="https://www.zomato.com/bangalore/burger-king-commercial-street/order" target="_blank">
+                <img src="Images/Brands/burger king.png" alt="Burger king logo" height="150">
+            </a>
+            <a href="https://www.zomato.com/bangalore/burger-king-commercial-street/order" target="_blank"><p class="brand-name">Burger King</p> </a>
+        </div>
+
+        <div class="dominos">
+            <a href="https://www.zomato.com/bangalore/dominos-pizza-1-mg-road" target="_blank">
+                <img src="Images/Brands/dominos.png" alt="dominos logo" height="150">
+            </a>
+            <a href="https://www.zomato.com/bangalore/dominos-pizza-1-mg-road" target="_blank"><p class="brand-name">Dominos</p></a>
+        </div>
+
+        <div class="kfc">
+            <a href="https://www.zomato.com/bangalore/kfc-brigade-road-bangalore/order" target="_blank">
+                <img src="Images/Brands/kfc.png" alt="kfc logo" height="150">
+            </a>
+            <a href="https://www.zomato.com/bangalore/kfc-brigade-road-bangalore/order" target="_blank"><p class="brand-name">KFC</p></a>
+        </div>
+
+        <div class="pizza-hut">
+            <a href="https://www.zomato.com/bangalore/pizza-hut-shanti-nagar" target="_blank">
+                <img src="Images/Brands/pizza hut.png" alt="pizza hut logo" height="150">
+            </a>
+            <a href="https://www.zomato.com/bangalore/pizza-hut-shanti-nagar" target="_blank"><p class="brand-name">Pizza Hut</p></a>
+        </div>
+
+        <div class="subway">
+            <a href="https://www.zomato.com/bangalore/subway-lavelle-road" target="_blank">
+                <img src="Images/Brands/subway.png" alt="subway logo" height="70">
+            </a>
+            <a href="https://www.zomato.com/bangalore/subway-lavelle-road" target="_blank"><p class="brand-name">Subway</p></a>
+        </div>
+    </div>
+
+    <hr class="grey-hr">
+    <h3 class="sub-heading">Best food in <mark>Bengaluru</mark></h3>
+
+    <!-- Restaurants -->
+    <div class="res-container">
+
+        <!-- First Restaurant -->
+        <div class="restaurant" id="first">
+            <div class="res-pic">
+                <a href="https://www.zomato.com/bangalore/meghana-foods-residency-road/order" target="_blank">
+                    <img src="Images/Restaurants/1. Meghana.png" alt="Restaurant image" height="300">
+                </a>
+            </div>
+    
+            <div class="res-details">
+                <a href="https://www.zomato.com/bangalore/meghana-foods-residency-road/order" target="_blank"><h2 class="res-name">Meghana Foods</h2></a>
+                <p class="res-specials"><i><img src="Images/Other/pointed finger.png" alt="items" height="20"> &nbsp;Biryani, Andhra, North Indian, Seafood</i></p>
+                <p class="res-address"><i>&nbsp;<img src="Images/Other/map pin.png" alt="map pin" height="30"> &nbsp;&nbsp;&nbsp;&nbsp;Residency Road, Bangalore</i></p>
+                <p class="res-rating"><i><b><img src="Images/Other/yellow_star.png" alt="star" height="30"> &nbsp; 4.4</b></i></p>
+            </div>
+        </div>
+
+        <!-- Second Restaurant -->
+        <div class="restaurant" id="second">
+            <div class="res-pic">
+                <a href="https://www.zomato.com/bangalore/kanti-sweets-brigade-road" target="_blank">
+                    <img src="Images/Restaurants/3. kanti.png" alt="Restaurant image" height="300">
+                </a>
+            </div>
+    
+            <div class="res-details">
+                <a href="https://www.zomato.com/bangalore/kanti-sweets-brigade-road" target="_blank"><h2 class="res-name">Kanti Sweets</h2></a>
+                <p class="res-specials"><i><img src="Images/Other/pointed finger.png" alt="items" height="20"> &nbsp;Mithai, Desserts, Street Food</i></p>
+                <p class="res-address"><i>&nbsp;<img src="Images/Other/map pin.png" alt="map pin" height="30"> &nbsp;&nbsp;&nbsp;&nbsp;Brigade Road, Bangalore</i></p>
+                <p class="res-rating"><i><b><img src="Images/Other/yellow_star.png" alt="star" height="30"> &nbsp; 4.5</b></i></p>
+            </div>
+        </div>
+
+        <!-- Third Restaurant -->
+        <div class="restaurant" id="third">
+            <div class="res-pic">
+                <a href="https://www.zomato.com/bangalore/thalassery-restaurant-kammanahalli" target="_blank">
+                    <img src="Images/Restaurants/4. Thalassery.png" alt="Restaurant image" height="300">
+                </a>
+            </div>
+    
+            <div class="res-details">
+                <a href="https://www.zomato.com/bangalore/thalassery-restaurant-kammanahalli" target="_blank"><h2 class="res-name">Thalassery Restaurant</h2></a>
+                <p class="res-specials"><i><img src="Images/Other/pointed finger.png" alt="items" height="20"> &nbsp;Kerala, North Indian, Chinese, Biryani, Desserts, Beverages</i></p>
+                <p class="res-address"><i>&nbsp;<img src="Images/Other/map pin.png" alt="map pin" height="30"> &nbsp;&nbsp;&nbsp;&nbsp;Kammanahalli, Bangalore</i></p>
+                <p class="res-rating"><i><b><img src="Images/Other/yellow_star.png" alt="star" height="30"> &nbsp; 4.2</b></i></p>
+            </div>
+        </div>
+
+        <!-- Fourth Restaurant -->
+        <div class="restaurant" id="fourth">
+            <div class="res-pic">
+                <a href="https://www.zomato.com/bangalore/polar-bear-frazer-town-bangalore" target="_blank">
+                    <img src="Images/Restaurants/5. Polar.png" alt="Restaurant image" height="300">
+                </a>
+            </div>
+    
+            <div class="res-details">
+                <a href="https://www.zomato.com/bangalore/polar-bear-frazer-town-bangalore" target="_blank"><h2 class="res-name">Polar Bear</h2></a>
+                <p class="res-specials"><i><img src="Images/Other/pointed finger.png" alt="items" height="20"> &nbsp;Ice Cream, Desserts, Shake, Beverages</i></p>
+                <p class="res-address"><i>&nbsp;<img src="Images/Other/map pin.png" alt="map pin" height="30"> &nbsp;&nbsp;&nbsp;&nbsp;Frazer Town, Bangalore</i></p>
+                <p class="res-rating"><i><b><img src="Images/Other/yellow_star.png" alt="star" height="30"> &nbsp; 4.3</b></i></p>
+            </div>
+        </div>
+
+        <!-- Fifth Restaurant -->
+        <div class="restaurant" id="fifth">
+            <div class="res-pic">
+                <a href="https://www.zomato.com/bangalore/hyderabad-biryaani-house-1-richmond-road-bangalore" target="_blank">
+                    <img src="Images/Restaurants/6. Hyderabad.png" alt="Restaurant image" height="300">
+                </a>
+            </div>
+    
+            <div class="res-details">
+                <a href="https://www.zomato.com/bangalore/hyderabad-biryaani-house-1-richmond-road-bangalore" target="_blank"><h2 class="res-name">Hyderabad Biryaani House</h2></a>
+                <p class="res-specials"><i><img src="Images/Other/pointed finger.png" alt="items" height="20"> &nbsp;Biryani, North Indian, Hyderabadi, Chinese, Andhra, Seafood</i></p>
+                <p class="res-address"><i>&nbsp;<img src="Images/Other/map pin.png" alt="map pin" height="30"> &nbsp;&nbsp;&nbsp;&nbsp;Richmond Road, Bangalore</i></p>
+                <p class="res-rating"><i><b><img src="Images/Other/yellow_star.png" alt="star" height="30"> &nbsp; 4.1</b></i></p>
+            </div>
+        </div>
+
+        <!-- Sixth Restaurant -->
+        <div class="restaurant" id="sixth">
+            <div class="res-pic">
+                <a href="https://www.zomato.com/bangalore/faasos-wraps-rolls-shanti-nagar-bangalore" target="_blank">
+                    <img src="Images/Restaurants/8. Fasoos.png" alt="Restaurant image" height="300">
+                </a>
+            </div>
+    
+            <div class="res-details">
+                <a href="https://www.zomato.com/bangalore/faasos-wraps-rolls-shanti-nagar-bangalore" target="_blank"><h2 class="res-name">Faasos - Wraps & Rolls</h2></a>
+                <p class="res-specials"><i><img src="Images/Other/pointed finger.png" alt="items" height="20"> &nbsp;Rolls, Wraps, Shawarma</i></p>
+                <p class="res-address"><i>&nbsp;<img src="Images/Other/map pin.png" alt="map pin" height="30"> &nbsp;&nbsp;&nbsp;&nbsp;Shanti Nagar, Bangalore</i></p>
+                <p class="res-rating"><i><b><img src="Images/Other/yellow_star.png" alt="star" height="30"> &nbsp; 4.2</b></i></p>
+            </div>
+        </div>
+
+        <!-- Seventh Restaurant -->
+        <div class="restaurant" id="seventh">
+            <div class="res-pic">
+                <a href="https://www.zomato.com/bangalore/andhra-gunpowder-seshadripuram-bangalore" target="_blank">
+                    <img src="Images/Restaurants/9. Andhra GunPowder.png" alt="Restaurant image" height="300">
+                </a>
+            </div>
+    
+            <div class="res-details">
+                <a href="https://www.zomato.com/bangalore/andhra-gunpowder-seshadripuram-bangalore" target="_blank"><h2 class="res-name">Andhra Gunpowder</h2></a>
+                <p class="res-specials"><i><img src="Images/Other/pointed finger.png" alt="items" height="20"> &nbsp;Andhra, Biryani, South Indian, Desserts, Beverages, Hyderabadi</i></p>
+                <p class="res-address"><i>&nbsp;<img src="Images/Other/map pin.png" alt="map pin" height="30"> &nbsp;&nbsp;&nbsp;&nbsp;Seshadripuram, Bangalore</i></p>
+                <p class="res-rating"><i><b><img src="Images/Other/yellow_star.png" alt="star" height="30"> &nbsp; 4.3</b></i></p>
+            </div>
+        </div>
+
+        <!-- Eighth Restaurant -->
+        <div class="restaurant" id="eighth">
+            <div class="res-pic">
+                <a href="https://www.zomato.com/bangalore/behrouz-biryani-shanti-nagar-bangalore" target="_blank">
+                    <img src="Images/Restaurants/10. Behrouz.png" alt="Restaurant image" height="300">
+                </a>
+            </div>
+    
+            <div class="res-details">
+                <a href="https://www.zomato.com/bangalore/behrouz-biryani-shanti-nagar-bangalore" target="_blank"><h2 class="res-name">Behrouz Biryani</h2></a>
+                <p class="res-specials"><i><img src="Images/Other/pointed finger.png" alt="items" height="20"> &nbsp;Biryani, Mughlai, Kebabs</i></p>
+                <p class="res-address"><i>&nbsp;<img src="Images/Other/map pin.png" alt="map pin" height="30"> &nbsp;&nbsp;&nbsp;&nbsp;Shanti Nagar, Bangalore</i></p>
+                <p class="res-rating"><i><b><img src="Images/Other/yellow_star.png" alt="star" height="30"> &nbsp; 4.0</b></i></p>
+            </div>
+        </div>
+        
+    </div>
+
+    <hr class="red-hr" id="bottom">
+    <hr class="grey-hr">
+    
+    <!-- Contact Us & Learn More -->
+    <div class="end" id="contact">
+        <div>
+            <p>zomato</p>
+        </div>
+
+        <div>
+            <select name="country">
+                <option value="India">India</option>
+                <option value="America">America</option>
+            </select>
+
+            <select name="language">
+                <option value="English">English</option>
+                <option value="Telugu">Telugu</option>
+                <option value="Hindi">Hindi</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="links">
+        <div class="col1">
+             <h3 class="end-head">ABOUT ZOMATO</h3>
+             <a href="https://www.zomato.com/who-we-are"><p class="end-link">Who We Are</p></a>
+             <a href="https://blog.zomato.com/"><p class="end-link">Blog</p></a>
+             <a href="https://www.zomato.com/careers"><p class="end-link">Work With Us</p></a>
+             <a href="https://www.zomato.com/investor-relations"><p class="end-link">Investor Relations	</p></a>
+             <a href="https://www.zomato.com/report-fraud"><p class="end-link">Report Fraud</p></a>
+             <a href="https://blog.zomato.com/press-kit"><p class="end-link">Press Kit</p></a>
+             <a href="https://www.zomato.com/contact"><p class="end-link">Contact Us</p></a>
+        </div>
+
+        <div class="col2">
+             <h3 class="end-head">ZOMAVERSE</h3>
+             <a href="https://www.zomato.com/"><p class="end-link">Zomato</p></a>
+             <a href="https://blinkit.com/"><p class="end-link">Blinkit</p></a>
+             <a href="https://www.feedingindia.org/"><p class="end-link">Feeding India</p></a>
+             <a href="https://www.hyperpure.com/"><p class="end-link">Hyperpure</p></a>
+             <a href="https://www.zomato.com/zomaland"><p class="end-link">Zomaland</p></a>
+        </div>
+
+        <div class="col3">
+             <h3 class="end-head">FOR RESTAURANTS</h3>
+             <a href="https://www.zomato.com/partner-with-us"><p class="end-link">Partner With Us</p></a>
+             <a href="https://play.google.com/store/apps/details?id=com.application.services.partner&hl=en_IN&gl=US"><p class="end-link">Apps For You</p></a>
+             &nbsp;
+             <h3 class="end-head">FOR ENTERPRISES</h3>
+             <a href="https://www.zomato.com/enterprise-solutions"><p class="end-link">Zomato For Enterprise</p></a>
+        </div>
+
+        <div class="col4">
+             <h3 class="end-head">LEARN MORE</h3>
+             <a href="https://www.zomato.com/policies/privacy/"><p class="end-link">Privacy</p></a>
+             <a href="https://www.zomato.com/policies/security/"><p class="end-link">Security</p></a>
+             <a href="https://www.zomato.com/policies/terms-of-service/"><p class="end-link">Terms</p></a>
+             <a href="https://www.zomato.com/directory"><p class="end-link">Sitemap</p></a>
+        </div>
+
+        <div class="col5">
+             <h3 class="end-head">SOCIAL LINKS</h3>
+
+             <div class="social-links">
+                <a href="https://www.linkedin.com/company/zomato/?originalSubdomain=in" target="_blank">
+                    <img src="Images/Contact Zomato/linkedin.png" alt="linkedin logo" height="25">
+                </a>
+
+                <a href="https://www.instagram.com/zomato/" target="_blank">
+                    <img src="Images/Contact Zomato/insta.png" alt="instagram logo" height="25">
+                </a>
+
+                <a href="https://twitter.com/zomato" target="_blank">
+                    <img src="Images/Contact Zomato/twitter.png" alt="twitter logo" height="25">
+                </a>
+
+                <a href="https://www.youtube.com/zomato" target="_blank">
+                    <img src="Images/Contact Zomato/youtube.png" alt="youtube logo" height="25">
+                </a>
+
+                <a href="https://www.facebook.com/zomato" target="_blank">
+                    <img src="Images/Contact Zomato/facebook.png" alt="facebook logo" height="25">
+                </a>
+             </div>
+
+             <div>
+                &nbsp;
+             </div>
+
+             <a href="https://apps.apple.com/in/app/zomato-food-delivery-dining/id434613896" target="_blank">
+                <img src="Images/Contact Zomato/app store.png" alt="" height="45">
+             </a>
+
+             <div>
+                &nbsp;
+             </div>
+
+             <a href="https://play.google.com/store/search?q=zomato&c=apps" target="_blank">
+                <img src="Images/Contact Zomato/play store.png" alt="" height="44">
+            </a>
+        </div>
+    </div>
+
+    <div class="end-line">
+        <p>By continuing past this page, you agree to our Terms of Service, 
+            Cookie Policy, Privacy Policy and Content Policies.<br>
+            All trademarks are properties of their respective owners. 
+            2008-2023 © Zomato™ Ltd. All rights reserved.
+        </p>
+    </div>
+
+
+
+
+    
+
+</body>
+</html>

@@ -1,0 +1,288 @@
+.red-hr{
+    border: 15px solid red;
+    border-radius: 30px;
+}
+
+.black-hr{
+    border: 2px solid black;
+    border-radius: 100%;
+}
+
+.grey-hr{
+    border: 2px solid black;
+    border-radius: 100%;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 60px;
+}
+
+.main-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#city > p{
+    font-size: 25px;
+}
+
+#city > select{
+    height: 25px;
+    border-radius: 5px;
+}
+
+#search > input{
+    height: 30px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.main-button{
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+#search-box::placeholder{
+    text-align: start;
+    font-style: italic;
+}
+
+.mb{
+    display: inline;
+    margin-right: 15px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-weight: 500;
+    padding: 5px;
+}
+
+.mb:hover{
+    border: 1px solid red;
+    border-radius: 10px;
+    font-size: 22px;
+    background-color: red;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+.options-zomato{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.service{
+    font-size: 25px;
+}
+
+.basic-options{
+    display: flex;
+}
+
+.basic-options{
+    font-size: 23px;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.basic-size{
+    height: 23px;
+}
+
+.sub-heading{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 35px;
+}
+
+.first-row-pics, .second-row-pics, .brands{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.first-row-pics img:hover{
+    transform: scale(1.2);
+}
+
+.second-row-pics img:hover{
+    transform: scale(1.2);
+}
+
+.brands img:hover{
+    transform: scale(1.2);
+}
+
+.res-pic img:hover{
+    transform: scale(1.05);
+}
+
+a:visited{
+    color: black;
+}
+
+.res-name:hover{
+    transform: scale(1.03);
+    text-shadow: 1px 1px 5px yellow;
+}
+
+.item-name:hover, .brand-name:hover{
+    box-shadow: 5px 1px 10px red;
+}
+
+#brands-head{
+    background-color: #1C1C1C10;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+
+.brands{
+    background-color: #1C1C1C10;
+    padding-top: 10px;
+}
+
+.item-name, .brand-name{
+    font-style: italic;
+    font-size: 22px;
+}
+
+.biriyani, .pizza, .burger, .fried-rice, .idli, .cake, .thali, .rolls, .ice-cream{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.burger-king, .dominos, .kfc, .pizza-hut, .subway{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.res-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.restaurant{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    justify-content: center;
+}
+
+#first, #third, #fifth, #seventh{
+    padding-top: 20px;
+    background-color: #1C1C1C10;
+}
+
+#second, #fourth, #sixth, #eighth{
+    padding-top: 20px;
+    background-color: #1C1C1C30;
+}
+
+.res-pic img{
+    border-radius: 50%;
+}
+
+.res-name{
+    font-family: 'Mate SC', serif;
+    font-size: 50px;
+}
+
+.res-specials, .res-address, .res-rating{
+    font-size: 22px;
+}
+
+#bottom{
+    border: 20px solid red;
+}
+
+.end{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.end p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+.end select {
+    height: 30px;
+    padding: 5px;
+    border-radius: 3px;
+    margin-right: 15px;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    background-color: #1C1C1C05;
+    margin-bottom: 0px;
+}
+
+.social-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.end-head{
+    font-family: 'Sen', sans-serif;
+    font-size: 18px;
+}
+
+.end-link{
+    font-family: 'Montserrat', sans-serif;
+    color: grey;
+}
+
+.end-line{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 0px;
+}
+
+.end-line > p{
+    font-size: 18px;
+    color: grey;
+    text-align: center;
+} 
+
+
+
+
+
+
+
+
+
+
+
